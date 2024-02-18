@@ -9,7 +9,7 @@ A GitHub webhook triggers the Lambda function via the API Gateway, logging chang
 ## Project Structure
 
 -   **`terraform/`**: Contains Terraform configuration files for provisioning AWS resources and Github repository.
--   **`lambda_source`**: Contains the Lambda function written in Python and the zip file which includes all the dependencies.
+-   **`lambda_source/`**: Contains the Lambda function written in Python and the zip file which includes all the dependencies.
 -   **`README.md`**: Documentation file for the project.
 
 ## Prerequisites
