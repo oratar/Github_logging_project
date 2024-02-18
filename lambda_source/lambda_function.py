@@ -22,7 +22,7 @@ def lambda_handler(event, context):
             changed_files += f"{file.filename}: {file.status}\n"
 
         s3 = boto3.resource('s3')
-        s3_bucket_name = "git-changes-bucket"
+        s3_bucket_name = os.environ['s3_bucket_name']
         s3_key = event['pull_request']['base']['repo']['name']+"/"+formatted_date
         s3.Object(s3_bucket_name, s3_key).put(Body=changed_files)
 
