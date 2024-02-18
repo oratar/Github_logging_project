@@ -18,7 +18,6 @@ resource "github_branch" "dev_branch" {
 
 resource "github_repository_webhook" "apigateway_webhook" {
   repository = github_repository.project_repo.name
-#  name       = var.webhook_name
   events     = ["pull_request"]
   active     = true
 
@@ -26,7 +25,6 @@ resource "github_repository_webhook" "apigateway_webhook" {
     url          = "${aws_api_gateway_deployment.deployment.invoke_url}/${var.api_gateway_path}"
     content_type = "json"
     insecure_ssl = false
-    #    secret       = "your-webhook-secret"  # Optional: Use a secret for additional security
   }
 }
 
