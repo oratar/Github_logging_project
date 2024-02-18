@@ -10,15 +10,6 @@ resource "github_repository" "project_repo" {
   auto_init = true
 }
 
-#resource "github_repository_file" "initial_commit" {
-#  repository          = github_repository.project_repo.name
-#  branch              = "main"
-#  file           = "README.md"
-#  content             = "initializing"
-#  commit_message      = "Managed by Terraform"
-#  overwrite_on_create = true
-#}
-
 resource "github_branch" "dev_branch" {
   repository = github_repository.project_repo.name
   branch     = "develop"
