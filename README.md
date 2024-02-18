@@ -35,7 +35,7 @@ cd <repository-directory>`
 
 `terraform init` 
 
-3.  Terraform plan, check what terraform will provision. 
+3.  Check the resources Terraform will provision. 
 
 `terraform plan -var=github_token=<your_github_token>`
 
@@ -46,3 +46,6 @@ cd <repository-directory>`
 ## Usage
 
 After deployment, create and merge the pull request in the GitHub repository. The webhook will trigger the Lambda function, which checks if the pull request was merged. If merged, the changes are logged to the S3 bucket.
+![image](https://github.com/oratar/Github_logging_project/assets/121873526/203b7287-016b-4c5c-99c7-20451227a1d3)
+
+
