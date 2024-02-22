@@ -3,7 +3,7 @@
 
 ## Overview
 
-This project demonstrates automated logging of pull requests to an S3 bucket,  utilizes Terraform to provision AWS resources including a Lambda function (written in Python), an API Gateway, an S3 bucket, and a GitHub repository. 
+This project demonstrates automated logging of pull requests to an S3 bucket, utilizes Terraform to provision AWS resources including Lambda function (written in Python), API Gateway, S3 bucket and GitHub repository. 
 A GitHub webhook triggers the Lambda function via the API Gateway, logging changes from merged pull requests to improve cooperation and increase transparency within development processes.
 
 ## Project Structure
