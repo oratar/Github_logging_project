@@ -29,8 +29,8 @@ Customize the project by adjusting the Terraform variables. See `terraform/varia
 
 1.  Clone the repository:
 
-`git clone <repository-url>
-cd <repository-directory>` 
+`git clone <repository-url>`
+`cd <repository-directory>` 
 
 2.  Initializing Terraform
 
